@@ -1,4 +1,4 @@
-# Suger's Maria
+# Sugar's Maria
 
 Here's a brief overview of the functionalities provided by this class:
 
