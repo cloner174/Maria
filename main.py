@@ -61,20 +61,15 @@ class Maria:
     @staticmethod
     def sublists_(List_, n_):
         """
-        Splits a list into approximately equal n_ sublists.
-        Parameters:
-        - List_: The list to be split.
-        - n_: The desired number of sublists.
-        Returns:
-        A list of sublists.
+        Splits a list into n approximately equal-sized sublists.
+
+        :param List_: The list to be split.
+        :param n_: The desired number of sublists.
+        :return: A list of sublists.
         """
         length = len(List_)
         avg = length / float(n_)
-        sublists = []
-        last = 0.0
-        while last < length:
-            sublists.append(List_[int(last):int(last + avg)])
-            last += avg
+        sublists = [List_[int(last):int(last + avg)] for last in np.arange(0, length, avg)]
         return sublists
     
     @staticmethod
