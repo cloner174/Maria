@@ -74,6 +74,12 @@ class Maria:
     
     @staticmethod
     def stats_(subset):
+        """
+        Computes various statistical measures for a subset of data.
+
+        :param subset: The data subset to analyze.
+        :return: A list containing the mean, median, standard deviation, variance, and selected quantiles.
+        """
         quantiles = [0.2, 0.25, 0.27, 0.3, 0.33, 0.35, 0.36, 0.60, 0.61, 0.64, 0.66, 0.69, 0.72, 0.75, 0.95]
         return [
             np.mean(subset),
