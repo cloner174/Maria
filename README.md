@@ -59,3 +59,10 @@ Here's a brief overview of the functionalities provided by this class:
         specific biomedical signal processing tasks.
 
 Each method is designed with static accessibility, ensuring that they can be utilized without the need to instantiate the class, thereby providing a straightforward interface for users to interact with their data.
+
+# Example method usage
+        import main
+        import pandas as pd
+        maria = main.Maria()
+        data_frame = pd.read_excel("path_to_your_file.xlsx")
+        fixed_data_frame = maria.row_names_fix(data_frame)
