@@ -65,3 +65,8 @@ Each method is designed with static accessibility, ensuring that they can be uti
         maria = main.Maria()
         data_frame = pd.read_excel("path_to_your_file.xlsx")
         fixed_data_frame = maria.row_names_fix(data_frame)
+
+## Mistakes and Corrections
+
+To err is human, and nobody likes a perfect person! If you come across any mistakes or if you have questions, feel free to raise an issue or submit a pull request. Your contributions to improving the content are highly appreciated.
+
